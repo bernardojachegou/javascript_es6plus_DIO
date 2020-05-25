@@ -1,0 +1,77 @@
+// Módulo (%)
+// Operador binário. Retorna o inteiro restante da divisão dos dois operandos.
+
+12 % 5 // Retorna 2.
+
+// Imcremento (++) e Decremento (--)
+++X
+X++
+
+const a = ++2; //Retorna 3
+const b + 2++; //Retorna 2
+
+--X
+X--
+
+// Negação (-) e Adição (+)
+-3
++"3" //Retorna 3
++true //Retorna 1
++false //Retorna 0
+-true //Retorna -1
+
+// Operador de exponenciação (**)
+2 ** 3 //Retorna 8
+10 ** -1 //Retorna 0.1
+
+// Operador de agrupamento ( )
+2 * (3 + 2) //Retorna 10
+
+// Operador de atribuição
+x = y;
+
+// Atribuição de adição
+x = x + y // ou
+x += y
+
+// Atribuição de subtração
+x = x - y // ou
+x -= y
+
+// Atribuição de multiplicação
+x = x * y // ou
+x *= y
+
+// Atribuição de divisão
+x = x / y // ou
+x /= y
+
+// Atribuição de resto
+x = x % y // ou
+x %= y
+
+// Igual (==)
+// Não Igual (!=)
+// Estritamente Igual (===)
+// Estritamente Não Igual (!==)
+// Maior que (>)
+// Maior que ou Igual (>=)
+// Menor que (<)
+// Menor que ou Igual (<=)
+
+// Ternário 
+condicao ? valor1 : valor2
+
+true ? 'foo' : 'bar' // Retorna 'foo'
+false ? 'foo' : 'bar' // Retorna 'bar'
+
+// Operadores lógicos
+
+// AND lógico &&
+exp1 && exp2
+
+// OR lógico ||
+exp1 || exp2
+
+// NOT lógico (!)
+!exp1

@@ -1,0 +1,18 @@
+//Sem Arrow Function
+function fn() {
+    return "Code Here";
+};
+
+//Utilizando Arrow Function
+const arrowFn = () => "Code Here";
+
+//Utilizando Arrow Function e recebendo mais de uma expressão
+const arrowFn2 = () => {
+    //if(X == X) {}
+    return "Code Here";
+}
+
+fn.prop = "Posso criar propriedades";
+
+console.log(fn());
+console.log(fn.prop);

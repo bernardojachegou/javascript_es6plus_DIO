@@ -1,0 +1,16 @@
+//---Currying: Melhorar uma função com "n" parâmetros / Padronizar parâmetros repetitivos
+
+        //Exemplo de função sem o conceito de Currying
+        function somaSemCurrying(a, b) {
+            return a + b;
+        };
+        console.log(somaSemCurrying(1, 2));
+
+        //Exemplo de função com o conceito de Currying
+        function somaComCurrying(a) {
+            return function (b) {
+                return a + b;
+            };
+        };
+        const soma2 = (somaComCurrying(2)); // A const recebe um valor fixo 2
+        console.log(soma2(1)); //Executa a função com o valor fixo(2) e o valor passado(1)

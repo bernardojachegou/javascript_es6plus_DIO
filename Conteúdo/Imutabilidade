@@ -1,0 +1,16 @@
+//---Imutabilidade: Um objeto não terá suas propriedades atualizadas/alteradas no mesmo endereço de memória
+const user = {
+    name: "Michel",
+    lastname: "Bernardo",
+};
+
+function getUserFullName(user) {
+    return {
+        ...user,
+        fullName: `${user.name} ${user.lastname}` 
+    }
+}
+
+const userFullName = getUserFullName(user);
+console.log(userFullName);
+console.log(user);

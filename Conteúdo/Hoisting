@@ -1,0 +1,36 @@
+//---Hoisting: Eleva a declaração de variável e função para o topo do código
+//---Hoisting com variável
+function fn() {
+    console.log(text);
+    var text = "Exemplo";
+    console.log(text);
+};
+fn();
+
+//---Por debaixo dos panos
+// function fn() {
+// var text;
+// console.log(text);
+
+// text = "Exemplo";
+
+// console.log(text);
+// };
+
+//---Hoisting com função
+function fn() {
+    log("Hoisting de função");
+    function log(value) {
+        console.log(value);
+    }
+}
+
+fn();
+
+//---Por debaixo dos panos
+// function fn() {
+//     function log(value) {
+//         console.log(value);
+//     };
+//     log("Hoisting de função");
+// };

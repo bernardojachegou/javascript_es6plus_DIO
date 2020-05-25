@@ -1,0 +1,46 @@
+//FOR
+const array = ['one', 'two', 'three'];
+
+for(let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(`Element #${index}: ${element}.`);
+}
+
+//WHILE
+var n = 0;
+var x = 0;
+
+while(n < 3 ) {
+    n++;
+    x += n;
+}
+
+console.log(x);
+
+//DO WHILE
+var i = 0;
+
+do {
+    i += 1;
+    console.log(i);
+} while (i < 5);
+
+//
+
+//FOR IN & FOR OF
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+//For in recebe propriedades externas;
+for (let i in arr) {
+    console.log(i); // Imprime a posição dos items
+}
+
+//For of não aceita propriedades externas;
+for (let i of arr) {
+    console.log(i); // Imprime os dados de cada posição
+}
+
+//CONTINUE & BREAK
+//BREAK: força a parada do algoritmo ao chegar no break;
+//CONTINUE: pula uma linha de código específica;
