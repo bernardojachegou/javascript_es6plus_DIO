@@ -1,0 +1,56 @@
+//Iteração de arrays
+
+//forEach: itera cada elemento de um array
+// const numerais = [1, 2, 3, 4, 5];
+
+// numerais.forEach((value, index) => {
+//     console.log(`${index}: ${value}`);
+// });
+
+const frutas = ['melancia', 'uva', 'banana', 'goiaba'];
+
+frutas.forEach((fruta, index) => { //Recebe o valor e a posição como parâmetro
+    console.log(index, fruta); //Imprime o valor e a posição
+});
+
+//map: Retorna um novo array iterando cada item do array
+
+frutas.map((fruta, index) => {
+    console.log(`${index} - ${fruta}`);
+});
+
+//flat: Retorna todos os elementos de um array com elementos de um sub-array
+//concatenados de forma recursiva de acordo com a profundidade (depth)
+
+const idades = [120, 34, [15, 12, 10, [6, 7, 3]]];
+
+console.log(idades.flat(0));
+console.log(idades.flat(1));
+console.log(idades.flat(2));
+
+//flatMap: Junção da função map com flat
+
+//keys: Retorna um array iterator que contém uma key
+
+const frutasIterator = frutas.entries();
+console.log(frutasIterator);
+console.log(frutasIterator.next());
+
+//find: Busca elemento dentro de um array
+
+//findIndex: Busca elemento e retorna o index(posição)
+
+//filter: Retorna o novo array de acordo com uma condição (filtro)
+
+const numerais = [1, 2, 3, 4, 5];
+
+const valoresMaioresQueDois = numerais.filter( value => value > 2);
+console.log(valoresMaioresQueDois);
+
+//indexOf: Retorna o primeiro índice em que um elemento pode ser encontrado no array
+//lastIndexOf: Retorna o último índice em que um elemento pode ser encontrado no array
+//include: Retorna um booleano verificando se determinado elemento existe
+//some: Retorna um booleano se pelo menos um item satisfaz a condição
+//sort: Ordena os elementos de um array de acordo com uma condição
+//join: Junta todos os elementos de um array separados por um delimitador e retorna em string
+//reduce: Retorna um novo tipo de dado iterando cada posição de um array

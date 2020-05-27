@@ -1,0 +1,18 @@
+//Classes e heranças
+
+class Pessoa { //Class mãe
+    constructor(nome) {
+        this.nome = nome; //Propriedade da class
+    }
+}
+
+class PessoaF extends Pessoa { //Class filha que recebe informações da class mãe
+    constructor(nome, cpf) { //Proriedades da class
+        super(nome);
+        this.cpf = cpf;
+    }
+}
+
+const dadosPessoa = new PessoaF("Michel", "049.049"); //Variável que instancia a class
+
+console.log(dadosPessoa);

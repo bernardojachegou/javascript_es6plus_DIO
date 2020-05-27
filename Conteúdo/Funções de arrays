@@ -1,0 +1,42 @@
+//Funções de arrays
+
+const pessoas = Array.of('Paulo', 'Rafaela', 'Gabriel'); //Array of cria um array com os parâmetros informados
+console.log(pessoas);
+
+const arrayComPosicoes = Array(3); //Cria um array com 3 posições vazias
+console.log(arrayComPosicoes);
+
+
+const arrayComDados = Array(3, 2); //Cria um array com 2 objetos dentros
+console.log(arrayComDados);
+
+const divs = document.querySelectorAll('div'); 
+const arr = Array.from(divs); //Pega todas as divs da página e põe dentro de um array
+
+const frutas = ['melancia', 'uva', 'banana', 'goiaba'];
+frutas.push('laranja'); //Insere elemento no final do array
+console.log(frutas);
+
+frutas.pop(); //Remore elemento no final do array
+console.log(frutas);
+
+frutas.unshift('acerola'); //Adiciona um elemento no começo do array
+console.log(frutas);
+
+frutas.shift('acerola'); //Remove um elemento no começo do array
+console.log(frutas);
+
+const salgados = ['coxinha', 'kibe'];
+const alimentos = frutas.concat(salgados); //Uni dois arrays diferentes
+console.log(alimentos);
+
+frutas.slice(0, 3); //Recorta o array passando a posição incial e final
+console.log(frutas);
+
+frutas.splice(2); //Remove items passando a posição inicial
+console.log(frutas);
+
+frutas.splice(0, 0, 'ameixa'); //Adiciona um elemento passando a posição, numero de elementos e serem removidos e o que será adiconado
+console.log(frutas);
+
+
