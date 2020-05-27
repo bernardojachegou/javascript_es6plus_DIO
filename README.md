@@ -23,6 +23,10 @@ JavaScript ES6 essencial - Digital Innovation One
   <li>Spread</li>
   <li>Operadores</li>
   <li>Laços de repetição</li>
+  <li>Class e heranças</li>
+  <li>Design Patterns</li>
+  <li>Funções com arrays</li>
+  <li>Iteração com arrays</li>
  </ul>
 
 ## :computer: Rodando o projeto:
